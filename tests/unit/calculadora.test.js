@@ -34,3 +34,8 @@ test("200 / 0 retorna 'Erro de divisão por zero'", () => {
   const resultado = calculadora.dividir(200, 0);
   expect(resultado).toBe("Não é possível dividir por zero");
 });
+
+test("2 * 2 retorna 4", () => {
+  const resultado = calculadora.multiplicar(2, 2);
+  expect(resultado).toBe(4);
+});
