@@ -39,3 +39,8 @@ test("2 * 2 retorna 4", () => {
   const resultado = calculadora.multiplicar(2, 2);
   expect(resultado).toBe(4);
 });
+
+test("2 * 'Jabuticaba' retorna 'Erro'", () => {
+  const resultado = calculadora.multiplicar(2, "Jabuticaba");
+  expect(resultado).toBe("Erro");
+});
